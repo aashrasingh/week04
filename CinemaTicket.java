@@ -38,8 +38,7 @@ public class CinemaTicket
             return;
         }
 
-
-        //LANGUAGE SURCHARGE
+        
         if (language.equals("hindi")) {
             price += 50;
         } else if (language.equals("english")) {
@@ -49,18 +48,16 @@ public class CinemaTicket
             return;
         }
 
-
-        //DISCOUNTS
+        
         if (student.equals("yes")) {
-            price -= price * 0.20;   // 20% student discount
+            price -= price * 0.20;   
         }
 
+        
         if (festival.equals("yes")) {
-            price -= price * 0.15;   // 15% festival discount
+            price -= price * 0.15;   
         }
 
-
-        //OUTPUT (FINAL PRICE)
         System.out.println("=============================");
         System.out.println("  Final Ticket Price: Rs. " + price);
         System.out.println("=============================");
